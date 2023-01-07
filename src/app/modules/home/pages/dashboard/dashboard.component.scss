@@ -10,8 +10,11 @@
 
   .dash-sidenav {
     background-color: var(--primary-color-2);
-    padding: 20px;
     border: 0px;
     width: 350px;
+
+    .profile-data {
+      margin-top: 115px;
+    }
   }
 }
