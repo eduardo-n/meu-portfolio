@@ -7,3 +7,17 @@
   -moz-appearance: none;
   appearance: none;
 }
+
+// Themes -------------------------------------------
+:root {
+  --primary-color: #1d1c25;
+  --primary-color-2:  #24232F;
+  --secondary-color: #00ff6a;
+}
+
+:root .light-theme {
+  --primary-color: #c2c2c2;
+  --primary-color-2: rgba(var(--primaryColor), 0.7);
+  --secondary-color: #00ffff;
+}
+// ---------------------------------------------------

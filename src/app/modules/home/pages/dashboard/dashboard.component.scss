@@ -1,6 +1,6 @@
 .pg-dashboard {
   .dash-container {
-    background:#1d1c25;
+    background: var(--primary-color);
     position:absolute;
     top:0px;
     right:0px;
@@ -9,7 +9,7 @@
   }
 
   .dash-sidenav {
-    background-color: #24232F;
+    background-color: var(--primary-color-2);
     padding: 20px;
     border: 0px;
     width: 350px;
