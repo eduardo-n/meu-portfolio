@@ -47,4 +47,18 @@
       }
     }
   }
+
+  .bx-languages {
+    .bx-item-language {
+      .spinner {
+
+      }
+    }
+  }
+}
+
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: var(--secondary-color);
+  stroke-width: 20%;
+
 }
