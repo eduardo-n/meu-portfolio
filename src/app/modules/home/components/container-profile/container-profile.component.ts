@@ -9,7 +9,7 @@ import { ProfileService } from 'src/app/core/services/profile-service/profile.se
 })
 export class ContainerProfileComponent implements OnInit {
 
-  profileData: ProfileModel | undefined;
+  profileData: ProfileModel | any;
 
   constructor(
     private profileService: ProfileService
