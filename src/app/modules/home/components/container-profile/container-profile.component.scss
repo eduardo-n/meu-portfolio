@@ -1,0 +1,19 @@
+
+.container-profile {
+  background-color: #24232F;
+
+  .bx-personal-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profile-picture {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-image: url('../../../../../assets/images/eu-perfil.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
