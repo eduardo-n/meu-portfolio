@@ -1,6 +1,5 @@
 
 .container-profile {
-
   .bx-personal-data {
     display: flex;
     flex-direction: column;
@@ -13,6 +12,39 @@
       background-image: url('../../../../../assets/images/eu-perfil.jpg');
       background-size: cover;
       background-position: center;
+    }
+
+    .profile-name {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 20px;
+      color: var(--text-color);
+    }
+
+    .bx-specialties {
+      margin: 10px 0 0 0;
+      text-align: center;
+
+      .profile-specialty {
+        color: var(--text-color-2);
+      }
+    }
+  }
+
+  .bx-address-data {
+    margin: 0 20px 0 20px;
+
+    .bx-item-personal-data {
+      display: flex;
+
+      h4{
+        margin-bottom: 10px;
+      }
+
+      .item-data {
+        margin-left: 10px;
+        color: var(--text-color-2);
+      }
     }
   }
 }

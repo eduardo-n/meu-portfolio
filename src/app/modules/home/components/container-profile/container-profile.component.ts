@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileModel } from 'src/app/core/models/profile.model';
 import { ProfileService } from 'src/app/core/services/profile-service/profile.service';
+import { ageCalculator } from 'src/app/shared/utils/age-calculator';
 
 @Component({
   selector: 'app-container-profile',
@@ -24,5 +25,9 @@ export class ContainerProfileComponent implements OnInit {
       .subscribe((data) => {
         this.profileData = data;
       });
+  }
+
+  get ageCalculator() {
+    return ageCalculator(`${this.profileData.birthDate.split('/')[1]}/${this.profileData.birthDate.split('/')[0]}/${this.profileData.birthDate.split('/')[2]}`);
   }
 }

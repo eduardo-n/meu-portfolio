@@ -1,6 +1,26 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
+// Themes -------------------------------------------
+:root {
+  --primary-color: #1d1c25;
+  --primary-color-2:  #24232F;
+  --secondary-color: #00ff6a;
+  --text-color: #eeebff;
+  --text-color-2: #a2a0af;
+  --text-color-3: #a2a0af;
+}
+
+:root .light-theme {
+  --primary-color: #c2c2c2;
+  --primary-color-2: rgba(var(--primaryColor), 0.7);
+  --secondary-color: #00ffff;
+  --text-color: #eeebff;
+  --text-color-2: #a2a0af;
+  --text-color-3: #a2a0af;
+}
+// ---------------------------------------------------
+
 * {
   font-family: "Montserrat", sans-serif;
   -webkit-appearance: none;
@@ -8,16 +28,20 @@
   appearance: none;
 }
 
-// Themes -------------------------------------------
-:root {
-  --primary-color: #1d1c25;
-  --primary-color-2:  #24232F;
-  --secondary-color: #00ff6a;
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4 {
+  font-family: "Montserrat", sans-serif !important;
+  color: var(--text-color);
 }
 
-:root .light-theme {
-  --primary-color: #c2c2c2;
-  --primary-color-2: rgba(var(--primaryColor), 0.7);
-  --secondary-color: #00ffff;
+.divider{
+  border: 0;
+  border-top: 1px solid var(--text-color-3);
+  opacity: 20%;
+  width: 100%;
+  margin: 30px 0 30px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-// ---------------------------------------------------

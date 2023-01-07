@@ -1,7 +1,32 @@
+<div class="container-profile" *ngIf="profileData">
 
-<div class="container-profile">
   <div class="bx-personal-data">
     <div class="profile-picture"></div>
-    <span>Eduardo Nunes</span>
+    <span class="profile-name">{{profileData?.name}}</span>
+    <div class="bx-specialties">
+      <span class="profile-specialty" *ngFor="let specialty of profileData.specialties">{{specialty.title}}<br></span>
+    </div>
   </div>
+
+  <hr class="divider">
+
+  <div class="bx-address-data">
+    <div class="bx-item-personal-data">
+      <h4>Nacionalidade:</h4>
+      <h4 class="item-data">{{profileData.address.country}}</h4>
+    </div>
+
+    <div class="bx-item-personal-data">
+      <h4>Cidade:</h4>
+      <h4 class="item-data">{{profileData.address.city}}</h4>
+    </div>
+
+    <div class="bx-item-personal-data">
+      <h4>Idade:</h4>
+      <h4 class="item-data">{{ageCalculator}}</h4>
+    </div>
+  </div>
+
+  <hr class="divider">
+
 </div>

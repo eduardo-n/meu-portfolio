@@ -1,7 +1,7 @@
 
 export interface ProfileModel{
   name: string,
-  birthDate: Date,
+  birthDate: string,
   email: string,
   urlGitHub: string,
   urlLinkedin: string,
