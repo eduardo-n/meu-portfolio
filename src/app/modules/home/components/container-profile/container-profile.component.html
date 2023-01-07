@@ -8,6 +8,11 @@
     </div>
   </div>
 
+  <div class="bx-theme">
+    <mat-icon class="material-symbols-outlined">light_mode</mat-icon>
+    <mat-slide-toggle [(ngModel)]="lightThemeIsChecked" (change)="toggleTheme()"></mat-slide-toggle>
+  </div>
+
   <hr class="divider">
 
   <div class="bx-address-data">
@@ -32,13 +37,13 @@
   <div class="bx-languages">
     <div class="bx-item-language" *ngFor="let language of profileLanguages">
       <div class="spinner">
-        <mat-progress-spinner
+        <mat-spinner
           class="example-margin"
           [mode]="'determinate'"
           [value]="language.levelPercentage"
           [diameter]="65"
           [strokeWidth]="4">
-        </mat-progress-spinner>
+        </mat-spinner>
       </div>
       <span>{{language.title}}</span>
     </div>

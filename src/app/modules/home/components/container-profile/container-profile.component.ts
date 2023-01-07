@@ -11,6 +11,7 @@ import { ageCalculator } from 'src/app/shared/utils/age-calculator';
 })
 export class ContainerProfileComponent implements OnInit {
 
+  lightThemeIsChecked: boolean = false;
   profileData: ProfileModel | any;
   profileLanguages: LanguagesModel | any;
 
@@ -35,6 +36,10 @@ export class ContainerProfileComponent implements OnInit {
       .subscribe((data) => {
         this.profileLanguages = data;
       });
+  }
+
+  toggleTheme() {
+    document.body.classList.toggle('light-theme');
   }
 
   get ageCalculator() {
