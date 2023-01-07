@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguagesModel } from 'src/app/core/models/languages.model';
 import { ProfileModel } from 'src/app/core/models/profile.model';
 import { ProfileService } from 'src/app/core/services/profile-service/profile.service';
 import { ageCalculator } from 'src/app/shared/utils/age-calculator';
@@ -11,6 +12,7 @@ import { ageCalculator } from 'src/app/shared/utils/age-calculator';
 export class ContainerProfileComponent implements OnInit {
 
   profileData: ProfileModel | any;
+  profileLanguages: LanguagesModel | any;
 
   constructor(
     private profileService: ProfileService
@@ -18,12 +20,20 @@ export class ContainerProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProfile();
+    this.getLanguages();
   }
 
   getProfile() {
     this.profileService.getProfile()
       .subscribe((data) => {
         this.profileData = data;
+      });
+  }
+
+  getLanguages() {
+    this.profileService.getProfileLanguages()
+      .subscribe((data) => {
+        this.profileLanguages = data;
       });
   }
 

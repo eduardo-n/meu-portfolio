@@ -30,16 +30,17 @@
   <hr class="divider">
 
   <div class="bx-languages">
-    <div class="bx-item-language">
+    <div class="bx-item-language" *ngFor="let language of profileLanguages">
       <div class="spinner">
         <mat-progress-spinner
           class="example-margin"
           [mode]="'determinate'"
-          [value]="70"
+          [value]="language.levelPercentage"
           [diameter]="65"
           [strokeWidth]="4">
         </mat-progress-spinner>
       </div>
+      <span>{{language.title}}</span>
     </div>
 
   </div>

@@ -49,9 +49,15 @@
   }
 
   .bx-languages {
-    .bx-item-language {
-      .spinner {
+    display: flex;
+    justify-content: center;
 
+    .bx-item-language {
+      margin: 0 15px 0 15px;
+      text-align: center;
+
+      .spinner {
+        margin-bottom: 10px;
       }
     }
   }
