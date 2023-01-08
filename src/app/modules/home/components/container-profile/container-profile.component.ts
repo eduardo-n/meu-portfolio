@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguagesModel } from 'src/app/core/models/languages.model';
 import { ProfileModel } from 'src/app/core/models/profile.model';
+import { SkillsModel } from 'src/app/core/models/skills.model';
 import { ProfileService } from 'src/app/core/services/profile-service/profile.service';
 import { ageCalculator } from 'src/app/shared/utils/age-calculator';
 
@@ -12,8 +13,10 @@ import { ageCalculator } from 'src/app/shared/utils/age-calculator';
 export class ContainerProfileComponent implements OnInit {
 
   lightThemeIsChecked: boolean = false;
+
   profileData: ProfileModel | any;
   profileLanguages: LanguagesModel | any;
+  profileSkills: SkillsModel | any;
 
   constructor(
     private profileService: ProfileService
@@ -22,6 +25,7 @@ export class ContainerProfileComponent implements OnInit {
   ngOnInit(): void {
     this.getProfile();
     this.getLanguages();
+    this.getSkills();
   }
 
   getProfile() {
@@ -35,6 +39,13 @@ export class ContainerProfileComponent implements OnInit {
     this.profileService.getProfileLanguages()
       .subscribe((data) => {
         this.profileLanguages = data;
+      });
+  }
+
+  getSkills() {
+    this.profileService.getProfileSkills()
+      .subscribe((data) => {
+        this.profileSkills = data;
       });
   }
 

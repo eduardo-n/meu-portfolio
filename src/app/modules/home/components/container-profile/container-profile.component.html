@@ -52,6 +52,14 @@
 
   <hr class="divider">
 
-
+  <div class="bx-skills">
+    <div class="bx-item-skill" *ngFor="let skill of profileSkills">
+      <div class="title-item">
+        <h4>{{skill.name}}</h4>
+        <h4 class="percent-item">{{skill.skillPercentage}}</h4>
+      </div>
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div>
+  </div>
 
 </div>

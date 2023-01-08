@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { ProfileModel } from '../../models/profile.model';
 import { environment } from 'src/environments/environment';
 import { LanguagesModel } from '../../models/languages.model';
+import { SkillsModel } from '../../models/skills.model';
 
 @Injectable({
   providedIn: 'root'
@@ -20,5 +21,9 @@ export class ProfileService {
 
   getProfileLanguages(): Observable<LanguagesModel>{
     return this.httpCliente.get<LanguagesModel>(`${environment.baseJson}languages.json`);
+  }
+
+  getProfileSkills(): Observable<SkillsModel>{
+    return this.httpCliente.get<SkillsModel>(`${environment.baseJson}skills.json`);
   }
 }
