@@ -38,12 +38,13 @@
     <div class="bx-item-language" *ngFor="let language of profileLanguages">
       <div class="spinner">
         <mat-spinner
-          class="example-margin"
+          class="mat-spinner-elem"
           [mode]="'determinate'"
           [value]="language.levelPercentage"
           [diameter]="65"
           [strokeWidth]="5">
         </mat-spinner>
+        <div class="message">{{language.levelPercentage}} %</div>
       </div>
       <span>{{language.title}}</span>
     </div>
