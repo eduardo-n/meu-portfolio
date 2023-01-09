@@ -1,6 +1,6 @@
 <div class="pg-dashboard">
-	<mat-drawer-container class="dash-container" autosize>
-		<mat-drawer #drawer class="dash-sidenav" mode="side" opened="true">
+	<mat-drawer-container class="dashboard-container" autosize>
+		<mat-drawer #drawer class="bx-sidenav" mode="side" opened="true">
 			<div class="profile-data">
 				<app-container-profile></app-container-profile>
 			</div>
@@ -9,6 +9,16 @@
 		<div class="sidenav-closer" [ngClass]="!isClosedSidenav ? 'sidenav-closer' : 'sidenav-closer-mouse-over'" (click)="sidenavCloser(drawer)">
       <mat-icon>arrow_back_ios</mat-icon>
 		</div>
+
+    <div class="bx-dashboard">
+      <div class="bx-banner">
+
+      </div>
+
+      <div class="bx-projects">
+
+      </div>
+    </div>
 
 	</mat-drawer-container>
 </div>

@@ -1,5 +1,5 @@
 .pg-dashboard {
-  .dash-container {
+  .dashboard-container {
     background: var(--primary-color);
     position:absolute;
     top:0px;
@@ -38,7 +38,7 @@
     }
   }
 
-  .dash-sidenav {
+  .bx-sidenav {
     background-color: var(--primary-color-2);
     border: 0px;
     min-width: 350px;
