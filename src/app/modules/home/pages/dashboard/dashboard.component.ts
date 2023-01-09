@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  isClosedSidenav: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  sidenavCloser(drawer: any) {
+    this.isClosedSidenav = !this.isClosedSidenav;
+    drawer.toggle();
+  }
 }
