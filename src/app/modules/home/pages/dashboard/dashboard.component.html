@@ -6,17 +6,19 @@
 			</div>
 		</mat-drawer>
 
-		<div class="sidenav-closer" [ngClass]="!isClosedSidenav ? 'sidenav-closer' : 'sidenav-closer-mouse-over'" (click)="sidenavCloser(drawer)">
-      <mat-icon>arrow_back_ios</mat-icon>
-		</div>
-
     <div class="bx-dashboard">
-      <div class="bx-banner">
-
+      <div class="sidenav-closer" [ngClass]="!isClosedSidenav ? 'sidenav-closer' : 'sidenav-closer-mouse-over'" (click)="sidenavCloser(drawer)">
+        <mat-icon>arrow_back_ios</mat-icon>
       </div>
 
-      <div class="bx-projects">
+      <div class="dashboard">
+        <div class="bx-banner">
+          <app-banner></app-banner>
+        </div>
 
+        <div class="bx-projects">
+
+        </div>
       </div>
     </div>
 

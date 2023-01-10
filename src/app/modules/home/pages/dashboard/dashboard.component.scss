@@ -1,24 +1,42 @@
 .pg-dashboard {
   .dashboard-container {
     background: var(--primary-color);
-    position:absolute;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    .bx-sidenav {
+      background-color: var(--primary-color-2);
+      border: 0px;
+      min-width: 350px;
+      padding: 0 20px;
+
+      .profile-data {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .bx-dashboard {
+    display: flex;
+    height: 100%;
 
     .sidenav-closer {
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: flex-end;
       width: 44px;
       height: 100%;
+      margin-right: 30px;
       cursor: pointer;
 
       mat-icon {
         font-size: 20px;
         color: var(--text-color-3);
-        transform: rotate( 0deg );
+        transform: rotate(0deg);
         transition: transform 800ms ease;
       }
     }
@@ -31,21 +49,21 @@
 
     .sidenav-closer-mouse-over {
       mat-icon {
-        transform: rotate( -180deg );
+        transform: rotate(-180deg);
         transition: transform 800ms ease;
         margin-right: 15px;
       }
     }
-  }
 
-  .bx-sidenav {
-    background-color: var(--primary-color-2);
-    border: 0px;
-    min-width: 350px;
-    padding: 0 20px;
+    .dashboard {
+      width: 100%;
 
-    .profile-data {
-      margin-top: 40px;
+      .bx-banner {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
     }
   }
+
 }

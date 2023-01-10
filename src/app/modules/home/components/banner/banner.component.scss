@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100&family=Permanent+Marker&family=Satisfy&display=swap');
+
+.banner {
+  display: flex;
+  width: 990px;
+  height: 320px;
+  background-color: var(--primary-color-2);
+  border-radius: 20px;
+
+  .bx-info {
+    margin: 70px 0 0 70px;
+
+    .bx-title {
+      .title {
+        font-size: 30px;
+
+        &-name {
+          font-family: 'Kaushan Script', cursive;
+          font-size: 30px;
+          color: var(--secondary-color);
+        }
+      }
+    }
+
+    .bx-subtitle {
+      .subtitle {
+        margin: 30px 0 30px 0;
+        color: var(--text-color-2);
+      }
+    }
+
+    button {
+      background-color: var(--text-color-4);
+    }
+
+    button:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+}
