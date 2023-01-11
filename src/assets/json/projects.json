@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Classificador de imagens",
+    "languages": "Python",
+    "description": "Um projeto que, a partir de 720 imagens binárias pertencentes a 4 diferentes classes, é capaz de classificar as imagens com suas respectivas classes.",
+    "linkGitHub": "https://github.com/eduardo-n/classificacao-de-imagens-sin393"
+  }
+]
