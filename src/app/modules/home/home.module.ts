@@ -7,13 +7,15 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MaterialModule } from 'src/app/shared/modules/material/material.module';
 import { BannerComponent } from './components/banner/banner.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 
 @NgModule({
   declarations: [
     ContainerProfileComponent,
     DashboardComponent,
-    BannerComponent
+    BannerComponent,
+    ProjectCardComponent
   ],
   imports: [
     CommonModule,

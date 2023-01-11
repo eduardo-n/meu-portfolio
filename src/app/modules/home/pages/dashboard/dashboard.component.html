@@ -7,6 +7,7 @@
 		</mat-drawer>
 
     <div class="bx-dashboard">
+
       <div class="sidenav-closer" [ngClass]="!isClosedSidenav ? 'sidenav-closer' : 'sidenav-closer-mouse-over'" (click)="sidenavCloser(drawer)">
         <mat-icon>arrow_back_ios</mat-icon>
       </div>
@@ -17,9 +18,11 @@
         </div>
 
         <div class="bx-projects">
-
+          <h2>Meu Portfólio</h2>
+          <app-project-card></app-project-card>
         </div>
       </div>
+
     </div>
 
 	</mat-drawer-container>

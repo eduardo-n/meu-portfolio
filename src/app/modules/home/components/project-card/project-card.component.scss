@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 370px;
+  background-color: var(--primary-color-2);
+  border-radius: 20px;
+  padding: 30px;
+
+  .bx-title {
+    text-align: start;
+  }
+
+  .divider {
+    margin: 10px 0 30px 0;
+    border-top: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    opacity: 100%;
+  }
+
+  .bx-description {
+    p {
+      color: var(--text-color-2);
+    }
+  }
+}
