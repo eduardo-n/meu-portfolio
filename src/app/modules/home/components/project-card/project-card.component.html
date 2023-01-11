@@ -17,7 +17,7 @@
 
   <div class="bx-button">
     <a [attr.href]="project.linkGitHub ? project.linkGitHub : null" target="_blank">
-      <button class="btn-github" mat-button matTooltip="{{project.linkGitHub ? '' : 'Projeto privado, entre em contato caso queira saber mais.'}}" matTooltipClass="tooltip">
+      <button class="btn-github" mat-button matTooltip="{{project.linkGitHub ? '' : 'Projeto privado! Entre em contato caso queira saber mais.'}}" matTooltipClass="tooltip">
         <i [ngClass]="project.linkGitHub ? 'fa-brands fa-github' : 'fa-brands fa-github disable'"></i><span [ngClass]="project.linkGitHub ? '' : 'disable'">GitHub</span>
       </button>
     </a>
