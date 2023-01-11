@@ -7,6 +7,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   exports: [
@@ -16,7 +17,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatSlideToggleModule,
     FormsModule,
     MatProgressBarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTooltipModule
   ],
   declarations: [],
   imports: [

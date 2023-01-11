@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsModel } from 'src/app/core/models/projects.model';
+import { ProfileService } from 'src/app/core/services/profile-service/profile.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,14 +10,25 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   isClosedSidenav: boolean = false;
+  projects: ProjectsModel[] | any;
 
-  constructor() { }
+  constructor(
+    private profileService: ProfileService
+  ) { }
 
   ngOnInit(): void {
+    this.getProjects();
   }
 
   sidenavCloser(drawer: any) {
     this.isClosedSidenav = !this.isClosedSidenav;
     drawer.toggle();
+  }
+
+  getProjects() {
+    this.profileService.getProjects()
+      .subscribe((data) => {
+        this.projects = data;
+      });
   }
 }

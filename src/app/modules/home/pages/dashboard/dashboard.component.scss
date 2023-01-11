@@ -56,6 +56,8 @@
     }
 
     .dashboard {
+      display: flex;
+      flex-direction: column;
       width: 100%;
 
       .bx-banner {
@@ -64,15 +66,20 @@
         margin-top: 50px;
       }
 
-      .bx-projects {
+      .bx-portfolio-title {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
 
         h2 {
           margin: 50px 0 50px 0;
           color: var(--text-color-2);
         }
+      }
+
+      .bx-projects {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
     }
   }

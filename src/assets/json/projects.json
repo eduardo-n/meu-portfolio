@@ -2,7 +2,19 @@
   {
     "title": "Classificador de imagens",
     "languages": "Python",
-    "description": "Um projeto que, a partir de 720 imagens binárias pertencentes a 4 diferentes classes, é capaz de classificar as imagens com suas respectivas classes.",
+    "description": "Um projeto que, a partir de 720 imagens binárias pertencentes a 4 diferentes classes, é capaz de classificar as imagens de acordo com suas respectivas classes.",
     "linkGitHub": "https://github.com/eduardo-n/classificacao-de-imagens-sin393"
+  },
+  {
+    "title": "Rede Social - Paper Tree",
+    "languages": "Angular",
+    "description": "Rede social para armazenar e publicar os Trabalhos de Conclusão de Curso dos discentes do curso de Sistemas de Informação da UFV campus Rio Paranaíba.",
+    "linkGitHub": ""
+  },
+  {
+    "title": "Gerenciador de tarefas",
+    "languages": "Angular",
+    "description": "Projeto desenvolvido para gerenciar tarefas de forma simples e direta.",
+    "linkGitHub": "https://github.com/eduardo-n/gerenciador-de-tarefas"
   }
 ]

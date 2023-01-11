@@ -1,9 +1,9 @@
 <div class="card">
 
   <div class="bx-title">
-    <h2 class="title">Classificador de imagens</h2>
+    <h2 class="title">{{project.title}}</h2>
     <div class="bx-languages">
-      <span>Python</span>
+      <span>{{project.languages}}</span>
     </div>
   </div>
 
@@ -11,14 +11,16 @@
 
   <div class="bx-description">
     <p class="description">
-      Um projeto que, a partir de 720 imagens binárias pertencentes a 4 diferentes classes, é capaz de classificar as imagens com suas respectivas classes.
+      {{project.description}}
     </p>
   </div>
 
   <div class="bx-button">
-    <button class="btn-github" mat-button>
-      <i class="fa-brands fa-github"></i> GitHub
-    </button>
+    <a [attr.href]="project.linkGitHub ? project.linkGitHub : null" target="_blank">
+      <button class="btn-github" mat-button matTooltip="{{project.linkGitHub ? '' : 'Projeto privado, entre em contato caso queira saber mais.'}}" matTooltipClass="tooltip">
+        <i [ngClass]="project.linkGitHub ? 'fa-brands fa-github' : 'fa-brands fa-github disable'"></i><span [ngClass]="project.linkGitHub ? '' : 'disable'">GitHub</span>
+      </button>
+    </a>
   </div>
 
 </div>

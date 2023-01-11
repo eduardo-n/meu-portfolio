@@ -6,6 +6,7 @@
   background-color: var(--primary-color-2);
   border-radius: 20px;
   padding: 30px;
+  margin: 20px;
 
   .bx-title {
     h2 {
@@ -49,10 +50,22 @@
 
     .btn-github {
       .fa-github {
-        margin: 0 5px 0 0;
+        margin: 0 8px 0 0;
         color: var(--text-color);
         font-size: 20px;
       }
+
+      .disable {
+        opacity: 20%;
+      }
     }
   }
+}
+
+::ng-deep .mat-tooltip {
+  font-size: 12px !important;
+  color: var(--text-color) !important;
+  max-width: unset !important;
+  padding: 12px !important;
+  background-color: var(--text-color-4);
 }
