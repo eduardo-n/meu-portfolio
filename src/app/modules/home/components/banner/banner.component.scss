@@ -9,7 +9,7 @@
   cursor: pointer;
 
   .bx-info {
-    margin: 70px 0 0 70px;
+    margin: 70px 70px 0 70px;
 
     .bx-title {
       .title {
@@ -41,7 +41,7 @@
   }
 
   .bx-images {
-    margin: 20px 140px 0 auto;
+    margin: 20px 120px 0 auto;
 
     img {
       position: absolute;
@@ -63,4 +63,21 @@
 .banner:hover .bx-images .shape {
   width: 230px;
   height: 230px;
+}
+
+@media (max-width: 1550px) {
+  .banner {
+    width: 756px;
+  }
+}
+
+@media (max-width: 1156px) {
+  .banner {
+    width: 352px;
+    height: 380px;
+
+    .bx-images {
+      display: none;
+    }
+  }
 }
