@@ -18,5 +18,13 @@
   {
     "name": "Python",
     "skillPercentage": 40
+  },
+  {
+    "name": "C",
+    "skillPercentage": 80
+  },
+  {
+    "name": "C#",
+    "skillPercentage": 40
   }
 ]
