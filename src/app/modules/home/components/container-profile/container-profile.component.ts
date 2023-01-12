@@ -26,6 +26,10 @@ export class ContainerProfileComponent implements OnInit {
     this.getProfile();
     this.getLanguages();
     this.getSkills();
+
+    if(localStorage.getItem('light-theme') === 'true'){
+      document.body.classList.add('light-theme');
+    }
   }
 
   getProfile() {
@@ -50,6 +54,8 @@ export class ContainerProfileComponent implements OnInit {
   }
 
   toggleTheme() {
+    localStorage.setItem('light-theme', this.lightThemeIsChecked.toString());
+    if(true)
     document.body.classList.toggle('light-theme');
   }
 
