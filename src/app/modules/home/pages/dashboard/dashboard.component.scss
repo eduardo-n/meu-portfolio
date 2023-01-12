@@ -6,12 +6,14 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
+    transition: all 0.3s ease;
 
     .bx-sidenav {
       background-color: var(--primary-color-2);
       border: 0px;
       min-width: 350px;
       padding: 0 20px;
+      transition: all 0.3s ease;
 
       .profile-data {
         margin-top: 40px;
