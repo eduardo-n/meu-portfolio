@@ -85,3 +85,13 @@
   }
 
 }
+
+@media (max-width: 840px) {
+  .pg-dashboard {
+    .dashboard-container {
+      .bx-sidenav {
+        width: 100%;
+      }
+    }
+  }
+}
