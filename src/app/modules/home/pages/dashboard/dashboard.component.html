@@ -1,6 +1,6 @@
 <div class="pg-dashboard" *ngIf="projects">
 	<mat-drawer-container class="dashboard-container" autosize>
-		<mat-drawer #drawer class="bx-sidenav" mode="side" opened="true">
+		<mat-drawer #drawer class="bx-sidenav" mode="side" opened="{{closeSideNav()}}">
 			<div class="profile-data">
 				<app-container-profile></app-container-profile>
 			</div>

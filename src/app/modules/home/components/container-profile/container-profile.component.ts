@@ -59,7 +59,6 @@ export class ContainerProfileComponent implements OnInit {
 
   toggleTheme() {
     localStorage.setItem('light-theme', this.lightThemeIsChecked.toString());
-    if(true)
     document.body.classList.toggle('light-theme');
   }
 

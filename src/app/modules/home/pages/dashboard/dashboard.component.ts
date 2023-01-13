@@ -10,7 +10,7 @@ import { ProfileService } from 'src/app/core/services/profile-service/profile.se
 })
 export class DashboardComponent implements OnInit {
 
-  isClosedSidenav: boolean = false;
+  isClosedSidenav: boolean;
   projects: ProjectsModel[];
   pageProjectsSlice: ProjectsModel[];
 
@@ -20,11 +20,21 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProjects();
+    this.closeSideNav();
+  }
+
+  closeSideNav() {
+    if(localStorage.getItem('isClosedSidenav') && localStorage.getItem('isClosedSidenav') === 'true'){
+      this.isClosedSidenav = localStorage.getItem('isClosedSidenav') === 'true';
+      return false;
+    }
+    return true;
   }
 
   sidenavCloser(drawer: any) {
     this.isClosedSidenav = !this.isClosedSidenav;
     drawer.toggle();
+    localStorage.setItem('isClosedSidenav', this.isClosedSidenav.toString());
   }
 
   getProjects() {
