@@ -76,6 +76,13 @@
         justify-content: center;
         flex-wrap: wrap;
       }
+
+      .bx-paginator {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
     }
   }
 
@@ -91,8 +98,21 @@
   }
 }
 
-// @media (min-width: 1400px) {
-//   .bx-projects {
-//     width: 1500px;
-//   }
-// }
+::ng-deep .mat-paginator {
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+::ng-deep .mat-paginator-outer-container {
+  background-color: var(--primary-color-2);
+  color: var(--text-color);
+  border-radius: 30px;
+  width: 100%;
+  padding: 0 0 0 7px;
+}
+
+::ng-deep .mat-paginator-range-actions {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+

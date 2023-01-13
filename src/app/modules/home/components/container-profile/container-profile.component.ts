@@ -14,9 +14,9 @@ export class ContainerProfileComponent implements OnInit {
 
   lightThemeIsChecked: boolean = false;
 
-  profileData: ProfileModel | any;
-  profileLanguages: LanguagesModel[] | any;
-  profileSkills: SkillsModel[] | any;
+  profileData: ProfileModel;
+  profileLanguages: LanguagesModel[];
+  profileSkills: SkillsModel[];
 
   constructor(
     private profileService: ProfileService

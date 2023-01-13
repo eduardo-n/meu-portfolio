@@ -20,15 +20,15 @@ export class ProfileService {
     return this.httpCliente.get<ProfileModel>(`${environment.baseJson}profile.json`);
   }
 
-  getProfileLanguages(): Observable<LanguagesModel>{
-    return this.httpCliente.get<LanguagesModel>(`${environment.baseJson}languages.json`);
+  getProfileLanguages(): Observable<LanguagesModel[]>{
+    return this.httpCliente.get<LanguagesModel[]>(`${environment.baseJson}languages.json`);
   }
 
-  getProfileSkills(): Observable<SkillsModel>{
-    return this.httpCliente.get<SkillsModel>(`${environment.baseJson}skills.json`);
+  getProfileSkills(): Observable<SkillsModel[]>{
+    return this.httpCliente.get<SkillsModel[]>(`${environment.baseJson}skills.json`);
   }
 
-  getProjects(): Observable<ProjectsModel>{
-    return this.httpCliente.get<ProjectsModel>(`${environment.baseJson}projects.json`);
+  getProjects(): Observable<ProjectsModel[]>{
+    return this.httpCliente.get<ProjectsModel[]>(`${environment.baseJson}projects.json`);
   }
 }

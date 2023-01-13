@@ -8,7 +8,7 @@ import { ProjectsModel } from 'src/app/core/models/projects.model';
 })
 export class ProjectCardComponent implements OnInit {
 
-  @Input() project: ProjectsModel | any;
+  @Input() project: ProjectsModel;
 
   constructor() { }
 
