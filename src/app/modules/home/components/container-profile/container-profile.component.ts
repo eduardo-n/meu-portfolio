@@ -23,12 +23,16 @@ export class ContainerProfileComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.controlTheme();
     this.getProfile();
     this.getLanguages();
     this.getSkills();
+  }
 
+  controlTheme() {
     if(localStorage.getItem('light-theme') === 'true'){
       document.body.classList.add('light-theme');
+      this.lightThemeIsChecked = true;
     }
   }
 
