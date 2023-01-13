@@ -29,7 +29,6 @@ export class ContainerProfileComponent implements OnInit {
 
     if(localStorage.getItem('light-theme') === 'true'){
       document.body.classList.add('light-theme');
-      this.lightThemeIsChecked = true;
     }
   }
 
