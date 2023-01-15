@@ -66,7 +66,8 @@ export class ContainerProfileComponent implements OnInit {
       data: {
         title: skill.name,
         text: skill.explanatoryText
-      }
+      },
+      panelClass: 'custom-modal'
     });
   }
 

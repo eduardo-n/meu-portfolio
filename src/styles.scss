@@ -53,6 +53,12 @@ span {
   margin-right: auto;
 }
 
+.custom-modal {
+  mat-dialog-container {
+      padding: 0;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
