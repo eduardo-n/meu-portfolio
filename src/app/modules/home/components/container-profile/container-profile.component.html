@@ -54,7 +54,7 @@
   <hr class="divider">
 
   <div class="bx-skills">
-    <div class="bx-item-skill" *ngFor="let skill of profileSkills">
+    <div class="bx-item-skill" *ngFor="let skill of profileSkills" (click)="openModalExplainSkill(skill)">
       <div class="title-item">
         <h4>{{skill.name}}</h4>
         <h4 class="percent-item">{{skill.skillPercentage}} %</h4>

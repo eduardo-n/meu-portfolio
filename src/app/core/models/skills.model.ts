@@ -1,5 +1,6 @@
 
 export interface SkillsModel{
   name: string,
-  skillPercentage: number
+  skillPercentage: number,
+  explanatoryText: string
 }

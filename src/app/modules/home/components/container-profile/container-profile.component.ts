@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { LanguagesModel } from 'src/app/core/models/languages.model';
 import { ProfileModel } from 'src/app/core/models/profile.model';
 import { SkillsModel } from 'src/app/core/models/skills.model';
 import { ProfileService } from 'src/app/core/services/profile-service/profile.service';
+import { ModalSimpleInformationComponent } from 'src/app/shared/modal/modal-simple-information/modal-simple-information.component';
 import { ageCalculator } from 'src/app/shared/utils/age-calculator';
 
 @Component({
@@ -19,7 +21,8 @@ export class ContainerProfileComponent implements OnInit {
   profileSkills: SkillsModel[];
 
   constructor(
-    private profileService: ProfileService
+    private profileService: ProfileService,
+    private dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -55,6 +58,16 @@ export class ContainerProfileComponent implements OnInit {
       .subscribe((data) => {
         this.profileSkills = data;
       });
+  }
+
+  openModalExplainSkill(skill: SkillsModel){
+    this.dialog.open(ModalSimpleInformationComponent, {
+      width: '560px',
+      data: {
+        title: skill.name,
+        text: skill.explanatoryText
+      }
+    });
   }
 
   toggleTheme() {
