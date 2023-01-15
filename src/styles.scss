@@ -56,7 +56,13 @@ span {
 .custom-modal {
   mat-dialog-container {
       padding: 0;
+      max-height: 500px;
   }
+}
+
+.backdrop-background {
+  background-color:rgba(0, 0, 0, 0.432);
+  backdrop-filter: blur(10px);
 }
 
 ::-webkit-scrollbar {
