@@ -83,3 +83,9 @@
   padding: 12px !important;
   background-color: var(--text-color-4);
 }
+
+@media (max-width: 445px) {
+  .card {
+    width: 212px;
+  }
+}

@@ -72,13 +72,13 @@
   height: 230px;
 }
 
-@media (max-width: 1623px) {
+@media (max-width: 1643px) {
   .banner {
     width: 756px;
   }
 }
 
-@media (max-width: 1223px) {
+@media (max-width: 1243px) {
   .banner {
     width: 352px;
     height: 285px;
@@ -90,5 +90,11 @@
     .bx-images {
       display: none;
     }
+  }
+}
+
+@media (max-width: 445px) {
+  .banner {
+    width: 278px;
   }
 }
