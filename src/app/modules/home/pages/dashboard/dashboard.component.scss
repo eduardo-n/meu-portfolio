@@ -1,0 +1,119 @@
+.pg-dashboard {
+  .dashboard-container {
+    background: var(--primary-color);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+
+    .bx-sidenav {
+      background-color: var(--primary-color-2);
+      border: 0px;
+      min-width: 350px;
+      transition: color 0.3s ease;
+
+      .profile-data {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .bx-dashboard {
+    display: flex;
+    height: 100%;
+
+    .sidenav-closer {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 44px;
+      height: 100%;
+      margin-right: 30px;
+      cursor: pointer;
+
+      mat-icon {
+        font-size: 20px;
+        color: var(--text-color-3);
+        transform: rotate(0deg);
+        transition: transform 800ms ease;
+      }
+    }
+
+    .sidenav-closer-mouse-over {
+      mat-icon {
+        transform: rotate(-180deg);
+        transition: transform 800ms ease;
+        margin-right: 15px;
+      }
+    }
+
+    .dashboard {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 75px;
+
+      .bx-banner {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 40px 0;
+      }
+
+      .bx-projects {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .bx-paginator {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 445px) {
+  .bx-projects {
+    width: 282px;
+  }
+
+  .bx-banner {
+    width: 282px;
+  }
+}
+
+@media (max-width: 840px) {
+  .pg-dashboard {
+    .dashboard-container {
+      .bx-sidenav {
+        width: 100%;
+      }
+    }
+  }
+}
+
+::ng-deep .mat-paginator {
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+::ng-deep .mat-paginator-outer-container {
+  background-color: var(--primary-color-2);
+  color: var(--text-color);
+  border-radius: 30px;
+  width: 100%;
+  padding: 0 0 0 7px;
+}
+
+::ng-deep .mat-paginator-range-actions {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+

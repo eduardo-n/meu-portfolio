@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Classificador de imagens",
+    "languages": "Python",
+    "description": "Um projeto que, a partir de 720 imagens binárias pertencentes a 4 diferentes classes, é capaz de classificar as imagens de acordo com suas respectivas classes.",
+    "linkGitHub": "https://github.com/eduardo-n/classificacao-de-imagens-sin393",
+    "significant": false
+  },
+  {
+    "title": "Rede Social - Paper Tree",
+    "languages": "Angular",
+    "description": "Rede social para armazenar e publicar os Trabalhos de Conclusão de Curso dos discentes do curso de Sistemas de Informação da UFV campus Rio Paranaíba.",
+    "linkGitHub": "",
+    "significant": false
+  },
+  {
+    "title": "Gerenciador de tarefas",
+    "languages": "Angular",
+    "description": "Projeto desenvolvido para gerenciar tarefas de forma simples e direta.",
+    "linkGitHub": "https://github.com/eduardo-n/gerenciador-de-tarefas",
+    "significant": false
+  },
+  {
+    "title": "Compactador de arquivo",
+    "languages": "Python",
+    "description": "Um sistema que, recebendo um arquivo texto (.txt) contendo uma cadeia de caracteres quaisquer, é capaz de compactar/descompactar este arquivo.",
+    "linkGitHub": "https://github.com/eduardo-n/compactador-python",
+    "significant": false
+  },
+  {
+    "title": "Jogo Pifado",
+    "languages": "C",
+    "description": "PiFaDo, ou Pife adaptado, é um jogo de baralho para dois jogadores. Esse jogo tem como objetivo aplicar os conceitos de estruturas de dados. Basicamente este jogo consiste em formar grupos de três cartas que podem ter valores iguais ou sequenciais. Cada grupo formado vale 1 ponto no placar. O jogador que fizer 5 pontos primeiro ganha o jogo.",
+    "linkGitHub": "https://github.com/eduardo-n/jogo-pifado",
+    "significant": false
+  },
+  {
+    "title": "Calculadora de IMC",
+    "languages": "HTML, CSS, JavaScript",
+    "description": "Calculadora de índice de massa corporal (IMC), medida internacional usada para calcular se uma pessoa está no peso ideal.",
+    "linkGitHub": "https://github.com/eduardo-n/calculo-imc",
+    "significant": false
+  },
+  {
+    "title": "Gestor de testes de COVID-19",
+    "languages": "C",
+    "description": "Sistema para auxiliar na gestão de testes de COVID-19, capaz de cadastrar novos testes, armazenar informações sobre cada teste realizado e visualizar um relatório sobre todos os testes feitos.",
+    "linkGitHub": "https://github.com/eduardo-n/gestor-testes-covid19o",
+    "significant": false
+  },
+  {
+    "title": "Jogo Popeye - IA",
+    "languages": "Prolog",
+    "description": "Um jogo desenvolvido com um conjunto de regras consistentes para solucionar um problema de busca. Regras que foram criadas em Prolog para modelar um ambiente do jogo Popeye, de forma que o protagonista (Popeye) possa derrotar seu inimigo (Brutus).",
+    "linkGitHub": "https://github.com/eduardo-n/jogo-popeye-IA",
+    "significant": false
+  },
+  {
+    "title": "Arboris App",
+    "languages": "Java",
+    "description": "Projeto de um aplicativo desenvolvido em plataforma nativa Android, com o intuito de gerenciar as rotinas diárias dos funcionários de uma empresa ( equipe, horário de almoço, deslocamento, produção, gastos e horas improdutivas ), captando coordenadas do GPS e gerando um relatório no fim de cada semana, além disso, permite o CRUD de Funcionários, Veículos, Atividades e Unidades. No mesmo aplicativo, também foi implementada uma aba separada para funções de coleta de dados dos terrenos a serem analizados pelos funcionários.",
+    "linkGitHub": "",
+    "significant": true
+  },
+  {
+    "title": "DSDeliver",
+    "languages": "SpringBoot, ReactJS, React Native",
+    "description": "Sistema de Delivery desenvolvido durante o curso Semana DevSuperior 2.0",
+    "linkGitHub": "https://github.com/eduardo-n/DSDeliver-sds2",
+    "significant": false
+  },
+  {
+    "title": "Jogo Antivírus por um dia",
+    "languages": "java",
+    "description": "Um jogo de 'tabuleiro desktop' projetado para dois jogadores. Esse jogo tem como objetivo percorrer os setores da memória de um computador infectado por vírus. O jogador assume o papel de antivírus, que deve avançar pelos setores, eliminando os vírus que encontrar, até que o setor com a fonte de infecção seja alcançado. Mas tome cuidado, os vírus podem te destruir no caminho.",
+    "linkGitHub": "https://github.com/eduardo-n/jogo-antivirus-por-um-dia",
+    "significant": false
+  },
+  {
+    "title": "Projeto Moreno Bike",
+    "languages": "java",
+    "description": "Sistema desenvolvido com o intuito de auxiliar no gerenciamento dos trabalhos de uma oficina de bicicleta.",
+    "linkGitHub": "https://github.com/eduardo-n/projeto_Moreno_Bike",
+    "significant": false
+  }
+
+]

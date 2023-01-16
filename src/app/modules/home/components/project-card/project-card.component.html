@@ -1,0 +1,27 @@
+<div class="card">
+
+  <div class="bx-title">
+    <h2 class="title">{{project.title}}</h2>
+    <div class="bx-languages">
+      <span>{{project.languages}}</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="bx-description">
+    <p class="description">
+      {{project.description}}
+    </p>
+  </div>
+
+  <div class="bx-button">
+    <a [attr.href]="project.linkGitHub ? project.linkGitHub : null" target="_blank">
+      <button class="btn-github" mat-button matTooltip="{{project.linkGitHub ? '' : 'Projeto privado! Entre em contato caso queira saber mais.'}}" matTooltipClass="tooltip">
+        <i [ngClass]="project.linkGitHub ? 'fa-brands fa-github' : 'fa-brands fa-github disable'"></i><span [ngClass]="project.linkGitHub ? '' : 'disable'">GitHub</span>
+      </button>
+    </a>
+    <i *ngIf="project.significant" matTooltip="Projeto em destaque" class="fa-solid fa-star star-icon"></i>
+  </div>
+
+</div>

@@ -1,0 +1,20 @@
+<div class="modal">
+  <div class="bx-close">
+    <mat-icon (click)="close()">close</mat-icon>
+  </div>
+
+  <div class="bx-title">
+    <h2 [innerHTML]="data.title"></h2>
+    <i [ngClass]="data.cssClassIcon"></i>
+  </div>
+
+  <div class="bx-text">
+    <p [innerHTML]="data.text"></p>
+  </div>
+
+  <div class="bx-button">
+    <button class="btn-modal" mat-flat-button (click)="close()"> Entendi </button>
+  </div>
+
+</div>
+

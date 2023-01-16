@@ -1,0 +1,40 @@
+<div class="pg-dashboard">
+	<mat-drawer-container class="dashboard-container" autosize>
+		<mat-drawer #drawer class="bx-sidenav" mode="side" opened="{{closeSideNav()}}">
+			<div class="profile-data">
+				<app-container-profile></app-container-profile>
+			</div>
+		</mat-drawer>
+
+    <div class="bx-dashboard">
+
+      <div class="sidenav-closer" [ngClass]="!isClosedSidenav ? 'sidenav-closer' : 'sidenav-closer-mouse-over'" (click)="sidenavCloser(drawer)">
+        <mat-icon>arrow_back_ios</mat-icon>
+      </div>
+
+      <div class="dashboard">
+        <div class="bx-banner">
+          <app-banner></app-banner>
+        </div>
+
+        <div class="bx-projects">
+          <ng-container>
+            <app-project-card *ngFor="let project of pageProjectsSlice" [project]="project"></app-project-card>
+          </ng-container>
+        </div>
+
+        <div class="bx-paginator">
+          <mat-paginator
+              #paginator
+              [length]="projects.length"
+              [pageSize]="6"
+              [pageSizeOptions]="[3, 6, 9, 12]"
+              (page)="OnPageChange($event)">
+          </mat-paginator>
+        </div>
+      </div>
+
+    </div>
+
+	</mat-drawer-container>
+</div>

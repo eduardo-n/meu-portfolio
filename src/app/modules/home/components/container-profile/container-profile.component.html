@@ -1,0 +1,66 @@
+<div class="container-profile" *ngIf="profileData">
+
+  <div class="bx-personal-data">
+    <div class="profile-picture"></div>
+    <span class="profile-name">{{profileData?.name}}</span>
+    <div class="bx-specialties">
+      <span class="profile-specialty" *ngFor="let specialty of profileData.specialties">{{specialty.title}}<br></span>
+    </div>
+  </div>
+
+  <div class="bx-theme">
+    <mat-icon>light_mode</mat-icon>
+    <mat-slide-toggle [checked]="lightThemeIsChecked" [(ngModel)]="lightThemeIsChecked" (change)="toggleTheme()"></mat-slide-toggle>
+  </div>
+
+  <hr class="divider">
+
+  <div class="bx-address-data">
+    <div class="bx-item-personal-data">
+      <h4>Nacionalidade:</h4>
+      <h4 class="item-data">{{profileData.address.country}}</h4>
+    </div>
+
+    <div class="bx-item-personal-data">
+      <h4>Cidade:</h4>
+      <h4 class="item-data">{{profileData.address.city}}</h4>
+    </div>
+
+    <div class="bx-item-personal-data">
+      <h4>Idade:</h4>
+      <h4 class="item-data">{{ageCalculator}}</h4>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="bx-languages">
+    <div class="bx-item-language" *ngFor="let language of profileLanguages">
+      <div class="spinner">
+        <mat-spinner
+          class="mat-spinner-elem"
+          [mode]="'determinate'"
+          [value]="language.levelPercentage"
+          [diameter]="65"
+          [strokeWidth]="5">
+        </mat-spinner>
+        <div class="message">{{language.levelPercentage}} %</div>
+      </div>
+      <span>{{language.title}}</span>
+    </div>
+
+  </div>
+
+  <hr class="divider">
+
+  <div class="bx-skills">
+    <div class="bx-item-skill" *ngFor="let skill of profileSkills" (click)="openModalExplainSkill(skill)">
+      <div class="title-item">
+        <h4>{{skill.name}}</h4>
+        <h4 class="percent-item">{{skill.skillPercentage}} %</h4>
+      </div>
+      <mat-progress-bar mode="determinate" value="{{skill.skillPercentage}}"></mat-progress-bar>
+    </div>
+  </div>
+
+</div>

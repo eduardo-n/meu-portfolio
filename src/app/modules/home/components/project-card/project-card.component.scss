@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 280px;
+  background-color: var(--primary-color-2);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px;
+
+  .bx-title {
+    h2 {
+      margin-bottom: 0px;
+      text-align: start;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .bx-languages {
+      span {
+        font-size: 16px;
+        color: var(--text-color-3);
+      }
+    }
+  }
+
+  .divider {
+    margin: 30px 0 30px 0;
+    border-top: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    opacity: 100%;
+  }
+
+  .bx-description {
+    p {
+      color: var(--text-color-2);
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .bx-button {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+
+    .btn-github {
+      .fa-github {
+        margin: 0 8px 0 0;
+        color: var(--text-color);
+        font-size: 20px;
+      }
+
+      .disable {
+        opacity: 20%;
+      }
+    }
+
+    .star-icon {
+      font-size: 15px;
+      color: var(--text-color-3);
+      margin-left: auto;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .star-icon:hover {
+      color: var(--text-color);
+    }
+  }
+}
+
+::ng-deep .mat-tooltip {
+  font-size: 12px !important;
+  color: var(--text-color) !important;
+  max-width: unset !important;
+  padding: 12px !important;
+  background-color: var(--text-color-4);
+}
+
+@media (max-width: 445px) {
+  .card {
+    width: 212px;
+  }
+}

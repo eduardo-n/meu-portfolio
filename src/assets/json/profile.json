@@ -1,0 +1,19 @@
+{
+  "name": "Eduardo Nunes",
+  "birthDate": "25/09/1998",
+  "email": "edununes726@gmail.com",
+  "urlGitHub": "https://github.com/eduardo-n/",
+  "urlLinkedin": "https://www.linkedin.com/in/edu-n/",
+  "specialties": [
+    {
+      "title": "Analista de TI"
+    },
+    {
+      "title": "Desenvolvedor Front-end"
+    }
+  ],
+  "address": {
+    "country": "Brasil",
+    "city": "Belo Horizonte - MG"
+  }
+}
