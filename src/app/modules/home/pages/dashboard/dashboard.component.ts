@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { Component, OnInit } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
 import { ProjectsModel } from 'src/app/core/models/projects.model';
 import { ProfileService } from 'src/app/core/services/profile-service/profile.service';
 
@@ -10,7 +10,6 @@ import { ProfileService } from 'src/app/core/services/profile-service/profile.se
 })
 export class DashboardComponent implements OnInit {
 
-  isClosedSidenav: boolean;
   projects: ProjectsModel[] = [];
   pageProjectsSlice: ProjectsModel[];
 
@@ -20,21 +19,11 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProjects();
-    this.controlSideNav();
-  }
-
-  controlSideNav() {
-    if(localStorage.getItem('isClosedSidenav') && localStorage.getItem('isClosedSidenav') === 'true'){
-      this.isClosedSidenav = localStorage.getItem('isClosedSidenav') === 'true';
-      return false;
-    }
-    return true;
   }
 
   sidenavCloser(drawer: any) {
-    this.isClosedSidenav = !this.isClosedSidenav;
     drawer.toggle();
-    localStorage.setItem('isClosedSidenav', this.isClosedSidenav.toString());
+    localStorage.setItem('isClosedSidenav', (!this.isClosedSidenav).toString());
   }
 
   getProjects() {
@@ -60,5 +49,9 @@ export class DashboardComponent implements OnInit {
 
   getSortedCommonProjects(projects: ProjectsModel[]) {
     return projects.filter(p => !p.significant).sort();
+  }
+
+  get isClosedSidenav(){
+    return localStorage.getItem('isClosedSidenav') === 'true';
   }
 }

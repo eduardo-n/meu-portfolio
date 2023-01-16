@@ -97,6 +97,28 @@
       }
     }
   }
+
+  .sidenav-closer-responsive {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 44px;
+    height: 100%;
+    margin-right: 30px;
+    cursor: pointer;
+
+    mat-icon {
+      font-size: 20px;
+      color: var(--text-color-3);
+      transform: rotate(0deg);
+      transition: transform 800ms ease;
+    }
+  }
+
+  .sidenav-closer-hidden {
+    display: none !important;
+  }
 }
 
 ::ng-deep .mat-paginator {
@@ -116,4 +138,3 @@
   background-color: var(--primary-color);
   border-radius: 30px;
 }
-
