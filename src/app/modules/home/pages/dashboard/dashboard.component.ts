@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.getProjects();
+    this.getProjects();
     this.controlSideNav();
   }
 
