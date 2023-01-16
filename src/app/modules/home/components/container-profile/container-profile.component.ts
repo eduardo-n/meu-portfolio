@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatDrawer } from '@angular/material/sidenav';
 import { LanguagesModel } from 'src/app/core/models/languages.model';
 import { ProfileModel } from 'src/app/core/models/profile.model';
 import { SkillsModel } from 'src/app/core/models/skills.model';
@@ -14,6 +15,7 @@ import { ageCalculator } from 'src/app/shared/utils/age-calculator';
 })
 export class ContainerProfileComponent implements OnInit {
 
+  @Input() drawer: MatDrawer;
   lightThemeIsChecked: boolean = false;
 
   profileData: ProfileModel;
@@ -37,6 +39,11 @@ export class ContainerProfileComponent implements OnInit {
       document.body.classList.add('light-theme');
       this.lightThemeIsChecked = true;
     }
+  }
+
+  sidenavCloser() {
+    this.drawer.toggle();
+    localStorage.setItem('isClosedSidenav', (!this.isClosedSidenav).toString());
   }
 
   getProfile() {
@@ -80,5 +87,9 @@ export class ContainerProfileComponent implements OnInit {
 
   get ageCalculator() {
     return ageCalculator(`${this.profileData.birthDate.split('/')[1]}/${this.profileData.birthDate.split('/')[0]}/${this.profileData.birthDate.split('/')[2]}`);
+  }
+
+  get isClosedSidenav(){
+    return localStorage.getItem('isClosedSidenav') === 'true';
   }
 }
