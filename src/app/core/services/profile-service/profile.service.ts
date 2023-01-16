@@ -17,18 +17,18 @@ export class ProfileService {
   ) { }
 
   getProfile(): Observable<ProfileModel>{
-    return this.httpCliente.get<ProfileModel>(`home/site/wwwroot/meu-portfolio/assets/json/profile.json`);
+    return this.httpCliente.get<ProfileModel>(`${environment.baseJson}profile.json`);
   }
 
   getProfileLanguages(): Observable<LanguagesModel[]>{
-    return this.httpCliente.get<LanguagesModel[]>(`home/site/wwwroot/meu-portfolio/assets/json/languages.json`);
+    return this.httpCliente.get<LanguagesModel[]>(`${environment.baseJson}languages.json`);
   }
 
   getProfileSkills(): Observable<SkillsModel[]>{
-    return this.httpCliente.get<SkillsModel[]>(`home/site/wwwroot/meu-portfolio/assets/json/skills.json`);
+    return this.httpCliente.get<SkillsModel[]>(`${environment.baseJson}skills.json`);
   }
 
   getProjects(): Observable<ProjectsModel[]>{
-    return this.httpCliente.get<ProjectsModel[]>(`home/site/wwwroot/meu-portfolio/assets/json/projects.json`);
+    return this.httpCliente.get<ProjectsModel[]>(`${environment.baseJson}projects.json`);
   }
 }
