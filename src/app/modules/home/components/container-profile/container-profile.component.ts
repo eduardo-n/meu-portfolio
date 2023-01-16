@@ -17,8 +17,8 @@ export class ContainerProfileComponent implements OnInit {
   lightThemeIsChecked: boolean = false;
 
   profileData: ProfileModel;
-  profileLanguages: LanguagesModel[];
-  profileSkills: SkillsModel[];
+  profileLanguages: LanguagesModel[] = [];
+  profileSkills: SkillsModel[] = [];
 
   constructor(
     private profileService: ProfileService,
@@ -27,9 +27,9 @@ export class ContainerProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.controlTheme();
-    // this.getProfile();
-    // this.getLanguages();
-    // this.getSkills();
+    this.getProfile();
+    this.getLanguages();
+    this.getSkills();
   }
 
   controlTheme() {
