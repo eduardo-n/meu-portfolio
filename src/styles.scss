@@ -56,7 +56,9 @@ span {
 .custom-modal {
   mat-dialog-container {
       padding: 0;
-      max-height: 500px;
+      max-height: 620px;
+      background-color: var(--text-color-2);
+      border-radius: 20px;
   }
 }
 

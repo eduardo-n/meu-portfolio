@@ -67,7 +67,8 @@ export class ContainerProfileComponent implements OnInit {
         title: skill.name,
         text: skill.explanatoryText
       },
-      panelClass: 'custom-modal'
+      panelClass: 'custom-modal',
+      backdropClass: 'backdrop-background'
     });
   }
 

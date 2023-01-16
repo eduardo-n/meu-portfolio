@@ -15,9 +15,9 @@ export class ModalSimpleInformationComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.data.title ?? 'Título';
-    this.data.text ?? 'Texto';
-    this.data.buttonText ?? 'Entendi'
+    this.data.title = this.data.title ?? 'Título';
+    this.data.text = this.data.text ?? 'Texto';
+    this.data.buttonText = this.data.buttonText ?? 'Entendi';
   }
 
   close() {

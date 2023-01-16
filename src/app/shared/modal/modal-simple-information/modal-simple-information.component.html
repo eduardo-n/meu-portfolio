@@ -1,3 +1,19 @@
-<span [innerHTML]="data.title"></span>
-<h2 [innerHTML]="data.text"></h2>
-<button class="btn-modal" mat-flat-button (click)="close()"> Entendi </button>
+<div class="modal">
+  <div class="bx-close">
+    <mat-icon (click)="close()">close</mat-icon>
+  </div>
+
+  <div class="bx-title">
+    <h2 [innerHTML]="data.title"></h2>
+  </div>
+
+  <div class="bx-text">
+    <p [innerHTML]="data.text"></p>
+  </div>
+
+  <div class="bx-button">
+    <button class="btn-modal" mat-flat-button (click)="close()"> Entendi </button>
+  </div>
+
+</div>
+
