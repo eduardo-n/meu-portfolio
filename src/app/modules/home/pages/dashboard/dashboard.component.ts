@@ -11,7 +11,7 @@ import { ProfileService } from 'src/app/core/services/profile-service/profile.se
 export class DashboardComponent implements OnInit {
 
   isClosedSidenav: boolean;
-  projects: ProjectsModel[];
+  projects: ProjectsModel[] = [];
   pageProjectsSlice: ProjectsModel[];
 
   constructor(
