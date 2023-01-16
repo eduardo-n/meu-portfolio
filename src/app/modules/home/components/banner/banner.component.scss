@@ -31,13 +31,19 @@
       }
     }
 
-    button {
-      background-color: var(--text-color-4);
-      transition: all 0.3s ease;
-    }
+    .bx-buttons {
+      display: flex;
+      align-items: center;
 
-    button:hover {
-      background-color: var(--secondary-color);
+      .btn-banner {
+        margin-right: 18px;
+        font-size: 25px;
+        transition: all 0.3s ease;
+      }
+
+      .btn-banner:hover {
+        color: var(--secondary-color);
+      }
     }
   }
 
