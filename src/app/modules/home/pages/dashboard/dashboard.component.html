@@ -2,7 +2,7 @@
 	<mat-drawer-container class="dashboard-container" autosize>
 		<mat-drawer #drawer class="bx-sidenav" mode="side" opened="{{!isClosedSidenav}}">
 			<div class="profile-data">
-				<app-container-profile></app-container-profile>
+				<app-container-profile [drawer]="drawer"></app-container-profile>
 			</div>
 		</mat-drawer>
 

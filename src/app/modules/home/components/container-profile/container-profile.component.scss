@@ -130,12 +130,12 @@
   .bx-closer-sidenav {
     display: flex;
     justify-content: flex-end;
-    margin-top: -600px;
-    margin-left: auto;
+    margin: -600px 10px 0 auto;
 
-    .colser-icon {
+    .closer-icon {
       position: fixed;
       align-items: center;
+      cursor: pointer;
       width: 30px;
       height: 30px;
       border-radius: 100px;
