@@ -21,6 +21,7 @@
         <i [ngClass]="project.linkGitHub ? 'fa-brands fa-github' : 'fa-brands fa-github disable'"></i><span [ngClass]="project.linkGitHub ? '' : 'disable'">GitHub</span>
       </button>
     </a>
+    <i *ngIf="project.significant" matTooltip="Projeto em destaque" class="fa-solid fa-star star-icon"></i>
   </div>
 
 </div>

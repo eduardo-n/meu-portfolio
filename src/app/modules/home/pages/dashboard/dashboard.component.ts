@@ -40,7 +40,7 @@ export class DashboardComponent implements OnInit {
   getProjects() {
     this.profileService.getProjects()
       .subscribe((data) => {
-        this.projects = data;
+        this.projects = this.getSortedSignificantProjects(data).concat(this.getSortedCommonProjects(data));
         this.pageProjectsSlice = this.projects.slice(0, 6);
       });
   }
@@ -52,5 +52,13 @@ export class DashboardComponent implements OnInit {
       endIndex = this.projects.length;
     }
     this.pageProjectsSlice = this.projects.slice(startIndex, endIndex);
+  }
+
+  getSortedSignificantProjects(projects: ProjectsModel[]) {
+    return projects.filter(p => p.significant).sort();
+  }
+
+  getSortedCommonProjects(projects: ProjectsModel[]) {
+    return projects.filter(p => !p.significant).sort();
   }
 }
