@@ -19,11 +19,11 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getProjects();
-    this.closeSideNav();
+    // this.getProjects();
+    this.controlSideNav();
   }
 
-  closeSideNav() {
+  controlSideNav() {
     if(localStorage.getItem('isClosedSidenav') && localStorage.getItem('isClosedSidenav') === 'true'){
       this.isClosedSidenav = localStorage.getItem('isClosedSidenav') === 'true';
       return false;

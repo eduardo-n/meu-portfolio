@@ -27,9 +27,9 @@ export class ContainerProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.controlTheme();
-    this.getProfile();
-    this.getLanguages();
-    this.getSkills();
+    // this.getProfile();
+    // this.getLanguages();
+    // this.getSkills();
   }
 
   controlTheme() {
