@@ -16,17 +16,25 @@
   .bx-title {
     display: flex;
     justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
 
     h2 {
       font-weight: 600;
       transition: all 0.5s ease;
+      margin: 0 15px 0 0;
     }
 
-    h2:hover {
-      font-size: 21px;
-      color: var(--secondary-color);
-      cursor: pointer;
+    i {
+      font-size: 25px;
+      color: var(--text-color-3);
     }
+  }
+
+  .bx-title:hover h2 {
+    font-size: 21px;
+    color: var(--secondary-color);
   }
 
   .bx-text {

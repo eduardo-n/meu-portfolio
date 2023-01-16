@@ -65,7 +65,8 @@ export class ContainerProfileComponent implements OnInit {
       width: '560px',
       data: {
         title: skill.name,
-        text: skill.explanatoryText
+        text: skill.explanatoryText,
+        cssClassIcon: skill.cssClassIcon
       },
       panelClass: 'custom-modal',
       backdropClass: 'backdrop-background'
