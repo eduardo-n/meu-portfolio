@@ -118,6 +118,38 @@
   }
 }
 
+.bx-closer-sidenav {
+  display: none;
+}
+
+@media (max-width: 840px) {
+  .container-profile {
+    padding: 0 70px 10px 50px;
+  }
+
+  .bx-closer-sidenav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -600px;
+    margin-left: auto;
+
+    .colser-icon {
+      position: fixed;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 100px;
+      box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.082);
+
+      mat-icon {
+        font-size: 20px;
+        color: var(--text-color-2);
+        margin: 4px 0 0 9px;
+      }
+    }
+  }
+}
+
 ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
   stroke: var(--secondary-color);
   stroke-width: 20%;
