@@ -6,7 +6,7 @@ Um projeto desenvolvido em [Angular 13](https://angular.io/).
 
 * [Angular Material](https://material.angular.io/) -O Angular Material é a implementação oficial, para o Angular, do Material Design, a especificação de design para interfaces interativas do Google.
 
-* [Font Awesome](https://material.angular.io/) - Um conjunto completo de 675 ícones pictográficos para gráficos vetoriais escaláveis..
+* [Font Awesome](https://www.npmjs.com/package/font-awesome-icons) - Um conjunto completo de 675 ícones pictográficos para gráficos vetoriais escaláveis..
 
 ## ⚙️ CI/CD
 
