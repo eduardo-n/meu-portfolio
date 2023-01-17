@@ -22,5 +22,5 @@ CI/CD, ou integração contínua/entrega ou implantação contínua, é uma prá
 
 Gostaria de fazer um agradecimento a essas pessoas pelo tempo dedicado ao desafio frontend proposto e parabenizar pelo incentivo ao desenvolvimento dos colaboradores.
 
-* Alan de oliveira Monteiro.
+* Alan de Oliveira Monteiro.
 * Cainã Fernandes Medeiros.
