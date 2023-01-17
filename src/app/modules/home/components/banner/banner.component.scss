@@ -101,21 +101,41 @@
 
 @media (max-width: 1243px) {
   .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
     width: 352px;
-    height: 285px;
+    height: 620px;
 
     .bx-info {
-      margin: 30px 30px 0 30px;
+      margin: 30px 30px auto 30px;
     }
 
     .bx-images {
-      display: none;
+      margin: 0 0 70px 70px !important;
     }
+  }
+
+  .banner:hover .bx-images .shape {
+    width: 200px;
+    height: 200px;
   }
 }
 
 @media (max-width: 445px) {
   .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
     width: 278px;
+    height: 620px;
+
+    .bx-info {
+      margin: 30px 30px auto 30px;
+    }
+
+    .bx-images {
+      margin: 0 0 70px 40px !important;
+    }
   }
 }
