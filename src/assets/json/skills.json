@@ -13,13 +13,13 @@
   },
   {
     "name": "Javascript",
-    "skillPercentage": 70,
+    "skillPercentage": 75,
     "explanatoryText": "O JS ou JavaScript é uma linguagem de programação de alto-nível, criada no meio da década de 90, mais precisamente em 1996 pelo lendário programador Brendan Eich que, além de criar o JavaScript, foi também um dos fundadores da Mozilla Corporation. É uma linguagem de programação de comportamento que permite a criação de conteúdos dinâmicos, controle de mídias e animações para deixar seu site mais interativo e interessante.",
     "cssClassIcon": "fa-brands fa-square-js"
   },
   {
     "name": "Java",
-    "skillPercentage": 80,
+    "skillPercentage": 75,
     "explanatoryText": "Java é uma linguagem de programação amplamente usada para codificar aplicações Web. Ela tem sido uma escolha popular entre os desenvolvedores há mais de duas décadas, com milhões de aplicações Java em uso hoje. Java é uma linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si. É uma linguagem de programação rápida, segura e confiável para codificar tudo, desde aplicações móveis e software empresarial até aplicações de big data e tecnologias do servidor.",
     "cssClassIcon": "fa-brands fa-java"
   },
@@ -46,5 +46,11 @@
     "skillPercentage": 30,
     "explanatoryText": "Prolog é uma linguagem de programação que se enquadra no paradigma de Programação em Lógica Matemática. É uma linguagem de uso geral que é especialmente associada com a inteligência artificial e linguística computacional.",
     "cssClassIcon": ""
+  },
+  {
+    "name": "SQL",
+    "skillPercentage": 60,
+    "explanatoryText": "SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais. Ela é uma linguagem declarativa e que não necessita de profundos conhecimentos de programação para que alguém possa começar a escrever queries, as consultas e pedidos, que trazem resultados de acordo com o que você está buscando. SQL significa Standard Query Language, literalmente a linguagem padrão para realizar queries.",
+    "cssClassIcon": "fa-solid fa-database"
   }
 ]
