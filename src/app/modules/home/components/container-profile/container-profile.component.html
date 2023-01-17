@@ -1,7 +1,7 @@
 <div class="container-profile" *ngIf="profileData">
 
   <div class="bx-personal-data">
-    <div class="profile-picture"></div>
+    <div class="profile-picture" style="background-image: url('assets/images/profile/euPerfil.png');"></div>
     <span class="profile-name">{{profileData?.name}}</span>
     <div class="bx-specialties">
       <span class="profile-specialty" *ngFor="let specialty of profileData.specialties">{{specialty.title}}<br></span>
