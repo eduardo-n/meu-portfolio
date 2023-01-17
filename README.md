@@ -16,7 +16,7 @@ CI/CD, ou integração contínua/entrega ou implantação contínua, é uma prá
 
 ## ✒️ Autores
 
-* **Desenvolvedor** - [Eduardo Nunes](github.com/eduardo-n)
+* **Desenvolvedor** - [Eduardo Nunes](https://github.com/eduardo-n)
 
 ## 🎁 Expressões de gratidão
 
