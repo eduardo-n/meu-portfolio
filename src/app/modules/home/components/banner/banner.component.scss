@@ -109,6 +109,16 @@
 
     .bx-info {
       margin: 30px 30px auto 30px;
+
+      .bx-title {
+        .title {
+          font-size: 25px;
+
+          &-name {
+            font-size: 25px;
+          }
+        }
+      }
     }
 
     .bx-images {
