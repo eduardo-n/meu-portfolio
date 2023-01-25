@@ -44,11 +44,11 @@ export class DashboardComponent implements OnInit {
   }
 
   getSortedSignificantProjects(projects: ProjectsModel[]) {
-    return projects.filter(p => p.significant).sort();
+    return projects.filter(p => p.significant).sort(() => Math.random() - 0.5);
   }
 
   getSortedCommonProjects(projects: ProjectsModel[]) {
-    return projects.filter(p => !p.significant).sort();
+    return projects.filter(p => !p.significant).sort(() => Math.random() - 0.5);
   }
 
   get isClosedSidenav(){
