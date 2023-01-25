@@ -18,9 +18,11 @@
         </div>
 
         <div class="bx-projects">
-          <ng-container>
-            <app-project-card *ngFor="let project of pageProjectsSlice" [project]="project"></app-project-card>
-          </ng-container>
+          <div class="projects-container">
+            <ng-container>
+              <app-project-card *ngFor="let project of pageProjectsSlice" [project]="project"></app-project-card>
+            </ng-container>
+          </div>
         </div>
 
         <div class="bx-paginator">

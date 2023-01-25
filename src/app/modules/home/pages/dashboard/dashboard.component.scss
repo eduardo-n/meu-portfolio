@@ -60,13 +60,19 @@
       .bx-banner {
         display: flex;
         justify-content: center;
-        margin: 50px 0 40px 0;
+        margin: 50px 0 20px 0;
       }
 
       .bx-projects {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+
+        .projects-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          width: 1200px;
+        }
       }
 
       .bx-paginator {
@@ -95,6 +101,30 @@
     .dashboard-container {
       .bx-sidenav {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1643px) {
+  .bx-dashboard {
+    .dashboard {
+      .bx-projects {
+        .projects-container {
+          width: 810px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1243px) {
+  .bx-dashboard {
+    .dashboard {
+      .bx-projects {
+        .projects-container {
+          width: 390px !important;
+        }
       }
     }
   }
