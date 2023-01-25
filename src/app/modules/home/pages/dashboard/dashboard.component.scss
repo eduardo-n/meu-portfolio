@@ -78,7 +78,7 @@
       .bx-paginator {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin: 20px 0 0 0;
       }
 
     }
@@ -93,6 +93,10 @@
 
   .bx-banner {
     width: 282px;
+  }
+
+  .bx-paginator {
+    margin: 20px 66px 0 0 !important;
   }
 }
 
@@ -136,7 +140,9 @@
 }
 
 ::ng-deep .mat-paginator-container {
-  display: block !important;
+  @media (max-width: 470px) {
+    display: block !important;
+  }
 }
 
 ::ng-deep .mat-paginator-outer-container {
