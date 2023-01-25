@@ -129,21 +129,19 @@
   .bx-closer-sidenav {
     display: flex;
     justify-content: flex-end;
-    margin: -660px 10px 0 auto;
+    margin: -680px 10px 0 auto;
 
     .closer-icon {
       position: fixed;
       align-items: center;
       cursor: pointer;
-      width: 30px;
-      height: 30px;
-      border-radius: 100px;
-      box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.082);
+      width: 40px;
+      height: 40px;
 
       mat-icon {
         font-size: 20px;
         color: var(--text-color-2);
-        margin: 4px 0 0 9px;
+        margin: 11px 0 0 16px;
       }
     }
   }
