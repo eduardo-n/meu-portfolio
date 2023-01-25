@@ -106,18 +106,6 @@
   }
 }
 
-@media (max-width: 1643px) {
-  .bx-dashboard {
-    .dashboard {
-      .bx-projects {
-        .projects-container {
-          width: 810px !important;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 1243px) {
   .bx-dashboard {
     .dashboard {
@@ -130,9 +118,25 @@
   }
 }
 
+@media (max-width: 1643px) {
+  .bx-dashboard {
+    .dashboard {
+      .bx-projects {
+        .projects-container {
+          width: 810px !important;
+        }
+      }
+    }
+  }
+}
+
 ::ng-deep .mat-paginator {
   background-color: var(--primary-color);
   transition: all 0.3s ease;
+}
+
+::ng-deep .mat-paginator-container {
+  display: block !important;
 }
 
 ::ng-deep .mat-paginator-outer-container {
