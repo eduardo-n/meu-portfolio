@@ -78,7 +78,7 @@
       .bx-paginator {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin: 20px 0 0 0;
       }
 
     }
@@ -86,13 +86,17 @@
 
 }
 
-@media (max-width: 445px) {
+@media (max-width: 470px) {
   .bx-projects {
     width: 282px;
   }
 
   .bx-banner {
     width: 282px;
+  }
+
+  .bx-paginator {
+    margin: 20px 66px 0 0 !important;
   }
 }
 
@@ -101,18 +105,6 @@
     .dashboard-container {
       .bx-sidenav {
         width: 100%;
-      }
-    }
-  }
-}
-
-@media (max-width: 1643px) {
-  .bx-dashboard {
-    .dashboard {
-      .bx-projects {
-        .projects-container {
-          width: 810px !important;
-        }
       }
     }
   }
@@ -130,9 +122,27 @@
   }
 }
 
+@media (max-width: 1643px) {
+  .bx-dashboard {
+    .dashboard {
+      .bx-projects {
+        .projects-container {
+          width: 810px !important;
+        }
+      }
+    }
+  }
+}
+
 ::ng-deep .mat-paginator {
   background-color: var(--primary-color);
   transition: all 0.3s ease;
+}
+
+::ng-deep .mat-paginator-container {
+  @media (max-width: 470px) {
+    display: block !important;
+  }
 }
 
 ::ng-deep .mat-paginator-outer-container {
