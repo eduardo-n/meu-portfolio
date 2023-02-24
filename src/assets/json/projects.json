@@ -45,7 +45,7 @@
     "title": "Gestor de testes de COVID-19",
     "languages": "C",
     "description": "Sistema para auxiliar na gestão de testes de COVID-19, capaz de cadastrar novos testes, armazenar informações sobre cada teste realizado e visualizar um relatório sobre todos os testes feitos.",
-    "linkGitHub": "https://github.com/eduardo-n/gestor-testes-covid19o",
+    "linkGitHub": "https://github.com/eduardo-n/gestor-testes-covid19",
     "significant": false
   },
   {
